@@ -21,7 +21,7 @@ model.fit(X, y, { epochs: 100 }).then(() => {
     console.log("Model trained!");
 
     // Save Model
-    model.save('file://c:/node.js1/model').then(() => {
+    model.save('file://./model').then(() => {
         console.log("Model saved!");
     }).catch(err => console.error("Save Error:", err));
 }).catch(err => console.error("Training Error:", err));
